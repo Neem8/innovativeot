@@ -76,12 +76,12 @@ export default function ReportExporterPage() {
         <div className="flex items-start justify-between border-b-2 border-slate-900 pb-6">
           <div>
             <div className="flex items-center gap-2">
-              <span className="font-extrabold text-2xl text-[#0F3854]">INNOVATIVE</span>
-              <span className="font-light text-2xl text-teal-600">OT</span>
+              <span className="font-extrabold text-2xl text-[#0F3854]">HEALTH</span>
+              <span className="font-light text-2xl text-teal-600">BOUND</span>
             </div>
-            <p className="text-xs text-slate-500 font-semibold mt-0.5">Occupational Therapy Solutions Inc.</p>
-            <p className="text-[11px] text-slate-500">St. Catharines • Oakville OTMH • Kitchener • Grimsby</p>
-            <p className="text-[11px] text-slate-500 font-bold">Tel: 289-214-4467 | Fax: 289-214-4468 | intake@innovativeot.ca</p>
+            <p className="text-xs text-slate-500 font-semibold mt-0.5">Health Bound Health Network</p>
+            <p className="text-[11px] text-slate-500">East York • Toronto • Hamilton • Etobicoke • Markham • Barrie</p>
+            <p className="text-[11px] text-slate-500 font-bold">Tel: 416-548-7872 | Fax: 416-850-9609 | info@healthbound.ca</p>
           </div>
 
           <div className="text-right text-xs space-y-1">

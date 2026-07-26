@@ -38,10 +38,10 @@ export const PlatformNavbar: React.FC = () => {
 
           <div className="flex items-center gap-2 border-l border-slate-800 pl-4">
             <div className="w-8 h-8 rounded-lg bg-linear-to-br from-teal-500 to-[#0F3854] flex items-center justify-center font-extrabold text-sm text-white shadow-xs">
-              iOT
+              HB
             </div>
             <div>
-              <span className="font-extrabold text-sm text-white tracking-tight">INNOVATIVE<span className="text-teal-400 font-light">OT</span></span>
+              <span className="font-extrabold text-sm text-white tracking-tight">HEALTH<span className="text-teal-400 font-light">BOUND</span></span>
               <span className="text-[10px] font-bold px-2 py-0.5 ml-2 rounded bg-teal-500/20 text-teal-300 border border-teal-400/30 uppercase tracking-wider">
                 Platform
               </span>

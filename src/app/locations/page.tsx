@@ -2,10 +2,24 @@
 
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { Header } from '@/components/public/Header';
 import { Footer } from '@/components/public/Footer';
 import { CLINIC_LOCATIONS } from '@/lib/mockData';
 import { MapPin, Phone, Building2, CheckCircle2, ArrowRight, ShieldCheck } from 'lucide-react';
+
+const RealLeafletMap = dynamic(
+  () => import('@/components/public/RealLeafletMap').then(mod => mod.RealLeafletMap),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="bg-white rounded-3xl border border-slate-200 shadow-md p-12 text-center text-slate-500 font-medium space-y-2">
+        <div className="w-8 h-8 border-4 border-teal-600 border-t-transparent rounded-full animate-spin mx-auto" />
+        <p className="text-xs">Loading OpenStreetMap real-world clinic map...</p>
+      </div>
+    )
+  }
+);
 
 export default function LocationsPage() {
   return (
@@ -28,6 +42,9 @@ export default function LocationsPage() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 flex-1 space-y-12">
         
+        {/* Real OpenStreetMap Interactive Leaflet Map */}
+        <RealLeafletMap />
+
         {/* Physical Clinics Grid */}
         <div className="space-y-6">
           <h2 className="text-2xl font-bold text-slate-900 flex items-center gap-2">
@@ -70,8 +87,8 @@ export default function LocationsPage() {
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-500 block">Regions Serviced</span>
                     <div className="flex flex-wrap gap-1.5">
                       {loc.regionsCovered.map(reg => (
-                        <span key={reg} className="text-xs bg-slate-100 text-slate-700 px-2.5 py-0.5 rounded font-medium">
-                          {reg}
+                        <span key={reg} className="text-xs bg-white text-slate-700 px-2.5 py-0.5 rounded font-medium border border-slate-200">
+                          ✓ {reg}
                         </span>
                       ))}
                     </div>
@@ -80,11 +97,11 @@ export default function LocationsPage() {
 
                 <div className="pt-4 border-t border-slate-100 flex items-center justify-between">
                   <a 
-                    href="tel:2892144467" 
+                    href={`tel:${loc.phone.replace(/[^0-9]/g, '')}`} 
                     className="text-xs font-bold text-slate-800 flex items-center gap-1.5 hover:text-teal-600"
                   >
                     <Phone className="w-3.5 h-3.5 text-teal-600" />
-                    <span>289-214-4467</span>
+                    <span>{loc.phone}</span>
                   </a>
                   <Link
                     href={`/referral?location=${loc.id}`}

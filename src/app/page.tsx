@@ -44,15 +44,15 @@ export default function Home() {
             <div className="lg:col-span-7 space-y-6">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-500/20 text-teal-200 border border-teal-400/30 text-xs font-semibold tracking-wide backdrop-blur-xs">
                 <Sparkles className="w-4 h-4 text-teal-300" />
-                <span>Ontario-Wide Multi-Clinic & Community OT Practice</span>
+                <span>Ontario-Wide Multidisciplinary Clinic Network</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-[1.15]">
-                Where Your <span className="text-teal-300 underline decoration-teal-400/50 decoration-wavy underline-offset-8">Journey</span> Begins.
+                Rebuilding Your <span className="text-teal-300 underline decoration-teal-400/50 decoration-wavy underline-offset-8">Life</span> & Health.
               </h1>
 
               <p className="text-lg sm:text-xl text-slate-200 leading-relaxed font-normal max-w-2xl">
-                Comprehensive occupational therapy for pediatric development, MVA catastrophic recovery, workplace RTW, and geriatric aging-in-place. Connected seamlessly with physicians, lawyers, and insurers.
+                Accredited interdisciplinary care for motor vehicle collisions, workplace recovery, chronic pain, and rehabilitation. Serving over 45 communities across Ontario.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -65,11 +65,11 @@ export default function Home() {
                 </Link>
 
                 <a
-                  href="tel:2892144467"
+                  href="tel:18665233615"
                   className="px-6 py-4 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-base backdrop-blur-xs border border-white/20 transition-all flex items-center justify-center gap-2"
                 >
                   <Phone className="w-5 h-5 text-teal-300" />
-                  <span>Call 289-214-4467</span>
+                  <span>Call 1-866-523-3615</span>
                 </a>
               </div>
 
@@ -77,15 +77,15 @@ export default function Home() {
               <div className="pt-6 border-t border-white/15 grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs text-slate-200 font-medium">
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
-                  <span>No Physician Referral Required</span>
+                  <span>CARF International Accredited</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
-                  <span>WSIB & AccessOAP Direct Billing</span>
+                  <span>WSIB & MVA Direct Billing</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-teal-300 shrink-0" />
-                  <span>Hospital Co-Located Clinics</span>
+                  <span>Bilingual Staff & Outreach</span>
                 </div>
               </div>
             </div>
@@ -110,8 +110,8 @@ export default function Home() {
                         MVA
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Auto Injury & Brain Injury</p>
-                        <p className="text-xs text-slate-300">SABS Form 1 & Attendant Care</p>
+                        <p className="text-sm font-semibold text-white">Auto Injury & Rehabilitation</p>
+                        <p className="text-xs text-slate-300">Form 1 Attendant Care & Neuro-Rehab</p>
                       </div>
                     </div>
                     <span className="text-xs px-2.5 py-1 rounded-full bg-blue-400/20 text-blue-200 font-medium">Auto Insurers</span>
@@ -120,14 +120,14 @@ export default function Home() {
                   <div className="bg-white/10 p-3.5 rounded-xl flex items-center justify-between border border-white/10">
                     <div className="flex items-center gap-3">
                       <div className="w-9 h-9 rounded-lg bg-teal-500/20 text-teal-300 flex items-center justify-center font-bold text-xs">
-                        OAP
+                        EHB
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Pediatric OT & Autism</p>
-                        <p className="text-xs text-slate-300">Sensory & Regulation Milestones</p>
+                        <p className="text-sm font-semibold text-white">Extended Health Benefits</p>
+                        <p className="text-xs text-slate-300">Physiotherapy, Massage & Chiropractic</p>
                       </div>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded-full bg-teal-400/20 text-teal-200 font-medium">OAP Approved</span>
+                    <span className="text-xs px-2.5 py-1 rounded-full bg-teal-400/20 text-teal-200 font-medium">Extended Health</span>
                   </div>
 
                   <div className="bg-white/10 p-3.5 rounded-xl flex items-center justify-between border border-white/10">
@@ -136,11 +136,11 @@ export default function Home() {
                         WSIB
                       </div>
                       <div>
-                        <p className="text-sm font-semibold text-white">Job Demands & RTW Plans</p>
-                        <p className="text-xs text-slate-300">Ergonomics & Work Hardening</p>
+                        <p className="text-sm font-semibold text-white">WSIB Work-Related Recovery</p>
+                        <p className="text-xs text-slate-300">Work Hardening & Return-to-Work Programs</p>
                       </div>
                     </div>
-                    <span className="text-xs px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-200 font-medium">WSIB Form 8</span>
+                    <span className="text-xs px-2.5 py-1 rounded-full bg-amber-400/20 text-amber-200 font-medium">WSIB Claims</span>
                   </div>
                 </div>
 
@@ -162,20 +162,20 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="space-y-1">
-              <p className="text-3xl sm:text-4xl font-extrabold text-[#0F3854]">4 Clinics</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-medium">Physical Hospital-Integrated Locations</p>
+              <p className="text-3xl sm:text-4xl font-extrabold text-[#0F3854]">6 Clinics</p>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">Physical Clinic Resource Centers</p>
             </div>
             <div className="space-y-1">
-              <p className="text-3xl sm:text-4xl font-extrabold text-teal-600">8 Regions</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-medium">GTA, Niagara, Halton, Waterloo & Beyond</p>
+              <p className="text-3xl sm:text-4xl font-extrabold text-teal-600">45+ Areas</p>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">Communities Served Across Ontario</p>
             </div>
             <div className="space-y-1">
-              <p className="text-3xl sm:text-4xl font-extrabold text-[#0F3854]">6+ Payers</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-medium">WSIB, OAP, MVA Insurers & Private</p>
+              <p className="text-3xl sm:text-4xl font-extrabold text-[#0F3854]">CARF</p>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">Commission on Accreditation of Rehab</p>
             </div>
             <div className="space-y-1">
-              <p className="text-3xl sm:text-4xl font-extrabold text-teal-600">10+ Years</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-medium">Serving Ontario Communities Since 2015</p>
+              <p className="text-3xl sm:text-4xl font-extrabold text-teal-600">Province-Wide</p>
+              <p className="text-xs sm:text-sm text-slate-600 font-medium">Outreach, Home & Community Visits</p>
             </div>
           </div>
         </div>
@@ -198,14 +198,18 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {SERVICE_LINES.map(service => {
             const iconMap: Record<string, React.ReactNode> = {
-              pediatric: <Smile className="w-6 h-6 text-teal-600" />,
-              mva_rehab: <Brain className="w-6 h-6 text-blue-600" />,
-              workplace_ergo: <Briefcase className="w-6 h-6 text-amber-600" />,
-              return_to_work: <Activity className="w-6 h-6 text-[#0F3854]" />,
-              driver_rehab: <Car className="w-6 h-6 text-indigo-600" />,
-              home_mods: <HomeIcon className="w-6 h-6 text-emerald-600" />,
-              chronic_pain: <HeartHandshake className="w-6 h-6 text-rose-600" />,
-              mental_health: <Users className="w-6 h-6 text-purple-600" />
+              physiotherapy: <Activity className="w-6 h-6 text-teal-600" />,
+              occupational_therapy: <HeartHandshake className="w-6 h-6 text-rose-600" />,
+              chiropractor: <Sparkles className="w-6 h-6 text-blue-600" />,
+              massage_therapy: <Users className="w-6 h-6 text-purple-600" />,
+              active_exercise: <Activity className="w-6 h-6 text-teal-600" />,
+              acupuncture: <CheckCircle2 className="w-6 h-6 text-teal-600" />,
+              cupping: <CheckCircle2 className="w-6 h-6 text-teal-600" />,
+              chiropody: <MapPin className="w-6 h-6 text-blue-600" />,
+              msk_injection: <ShieldAlert className="w-6 h-6 text-rose-600" />,
+              naturopathic: <Smile className="w-6 h-6 text-emerald-600" />,
+              assistive_devices: <HomeIcon className="w-6 h-6 text-emerald-600" />,
+              psychological_counselling: <Brain className="w-6 h-6 text-purple-600" />
             };
 
             return (
@@ -303,12 +307,12 @@ export default function Home() {
             </div>
 
             <div className="bg-slate-800/80 p-6 rounded-2xl border border-slate-700 space-y-3">
-              <div className="w-10 h-10 rounded-lg bg-purple-500/20 text-purple-300 flex items-center justify-center font-bold">
-                HR
+              <div className="w-10 h-10 rounded-lg bg-[#0F3854] text-teal-300 flex items-center justify-center font-bold">
+                HOSP
               </div>
-              <h3 className="text-lg font-bold text-white">Employers & HR Coordinators</h3>
+              <h3 className="text-lg font-bold text-white">Hospitals & Government</h3>
               <p className="text-xs text-slate-300 leading-relaxed">
-                Workplace ergonomic assessments, graduated RTW plans, and MSK injury prevention programs to protect workforce safety.
+                Programs and services extended to community, corporate, and government entities as well as hospitals directly.
               </p>
             </div>
           </div>
@@ -379,11 +383,11 @@ export default function Home() {
               Submit Online Referral Intake
             </Link>
             <a
-              href="tel:2892144467"
+              href="tel:18665233615"
               className="px-8 py-4 rounded-xl bg-teal-700/60 hover:bg-teal-700 text-white font-semibold text-base border border-teal-400/40 transition-all flex items-center justify-center gap-2"
             >
               <Phone className="w-5 h-5 text-teal-200" />
-              <span>Call Intake Desk: 289-214-4467</span>
+              <span>Call Toll Free: 1-866-523-3615</span>
             </a>
           </div>
         </div>

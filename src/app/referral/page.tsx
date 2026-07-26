@@ -40,12 +40,12 @@ function ReferralFormContent() {
   const [region, setRegion] = useState<OntarioRegion>('Niagara');
 
   const [serviceLine, setServiceLine] = useState<ServiceLineId>(
-    (searchParams.get('service') as ServiceLineId) || 'mva_rehab'
+    (searchParams.get('service') as ServiceLineId) || 'occupational_therapy'
   );
   const [payerType, setPayerType] = useState<PayerTypeId>('mva_auto');
   const [urgency, setUrgency] = useState<'normal' | 'high' | 'urgent'>('normal');
   const [preferredLocation, setPreferredLocation] = useState<LocationId>(
-    (searchParams.get('location') as LocationId) || 'st_catharines'
+    (searchParams.get('location') as LocationId) || 'pape_east_york'
   );
   const [clinicalSummary, setClinicalSummary] = useState('');
 
@@ -397,7 +397,7 @@ function ReferralFormContent() {
                 <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 flex items-start gap-3 text-xs text-amber-900">
                   <ShieldCheck className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                   <div>
-                    <span className="font-bold">PHIPA & PIPEDA Compliance Notice:</span> Information submitted via this form is encrypted and transmitted directly to InnovativeOT's secure internal intake server under Canadian healthcare privacy standards.
+                    <span className="font-bold">PHIPA & PIPEDA Compliance Notice:</span> Information submitted via this form is encrypted and transmitted directly to Health Bound's secure internal intake server under Canadian healthcare privacy standards.
                   </div>
                 </div>
 

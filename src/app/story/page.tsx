@@ -19,13 +19,13 @@ export default function StoryPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4 text-center relative z-10">
           <span className="text-xs font-bold uppercase tracking-wider text-teal-300 bg-white/10 px-3 py-1 rounded-full border border-white/20 backdrop-blur-xs">
-            Founded 2015 • OT-Led Practice
+            CARF Accredited Multidisciplinary Clinic
           </span>
           <h1 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
             Our Story & Clinical Team
           </h1>
           <p className="text-slate-200 text-base max-w-3xl mx-auto">
-            Founded by an Occupational Therapist with a vision to transform fragmented healthcare into a compassionate, interdisciplinary continuum of care across Ontario.
+            Dedicated to helping clients rebuild their life and health one step at a time by bringing client-centered care, evidence-based practice, research, and education together.
           </p>
         </div>
       </section>
@@ -37,32 +37,30 @@ export default function StoryPage() {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 text-teal-800 border border-teal-200 text-xs font-bold">
               <Sparkles className="w-3.5 h-3.5 text-teal-600" />
-              <span>Practicing Across Ontario Since 2015</span>
+              <span>Accredited Multidisciplinary Care Across Ontario</span>
             </div>
             <h2 className="text-3xl font-extrabold text-slate-900 tracking-tight">
-              Built by OTs, for Clients, Referrers, and Healthcare Partners
+              Built to Help You Rebuild Your Life and Your Health, One Step at a Time
             </h2>
             <p className="text-slate-600 leading-relaxed text-base">
-              InnovativeOT began in 2015 when our founder recognized a critical breakdown in Ontario rehabilitation: clients leaving hospital trauma units or living with complex conditions were trapped in long waitlists, fragmented communication between physicians, insurers, and lawyers, and generic care plans.
+              Health Bound Health Network is dedicated to helping clients rebuild their life and health one step at a time by bringing client-centered care, evidence-based practice, research, and education together. We serve as an accredited multidisciplinary clinic and resource center.
             </p>
             <p className="text-slate-600 leading-relaxed text-base">
-              Today, our practice operates physical clinics inside major Ontario hospital networks (Oakville Trafalgar, Marotta Family Hospital St. Catharines, Benton Medical Kitchener) alongside a robust community tele-OT network.
+              Today, our network serves over 45 communities across Ontario with physical clinic resource centers (including East York, Toronto, Hamilton, Etobicoke, Markham, and Barrie) alongside a robust province-wide community outreach program.
             </p>
           </div>
 
           <div className="lg:col-span-5 bg-slate-900 text-white rounded-2xl p-6 space-y-6 border border-slate-800 shadow-xl">
             <h3 className="text-lg font-bold text-white border-b border-slate-800 pb-3">
-              Our 7 Pillars of Excellence
+              Our 5 Core Values
             </h3>
-            <ul className="space-y-3 text-xs text-slate-300">
+            <ul className="space-y-4 text-xs text-slate-300">
               {[
-                { title: 'Compassionate Care', desc: 'Treating the whole person, not just a diagnosis code.' },
-                { title: 'Interdisciplinary Excellence', desc: 'Seamless collaboration with physicians, lawyers & adjusters.' },
-                { title: 'Healthcare Partner Support', desc: 'Objective, rapid reporting formatted for downstream needs.' },
-                { title: 'Continuity of Care', desc: 'Unbroken transition from hospital discharge to community.' },
-                { title: 'Innovation in Prevention', desc: 'Proactive ergonomic & fall prevention strategies.' },
-                { title: 'Empowerment Through Education', desc: 'Equipping families with self-advocacy tools.' },
-                { title: 'Community Impact', desc: 'Accessible care across urban, rural, and remote regions.' }
+                { title: 'Client-Centered Care', desc: 'Tailoring individualized treatment plans that prioritize the goals and wellbeing of each client.' },
+                { title: 'Evidence-Based Practice', desc: 'Integrating clinical expertise, client preferences, and the best available research evidence.' },
+                { title: 'Teamwork & Collaboration', desc: 'Fostering active cooperation between clients, families, insurers, legal partners, and clinicians.' },
+                { title: 'Diversity & Inclusion', desc: 'Cultivating a welcoming environment that respects and values cultural and social differences.' },
+                { title: 'Quality & Continuous Improvement', desc: 'Maintaining high standards through CARF accreditation guidelines and ongoing clinical education.' }
               ].map((p, idx) => (
                 <li key={idx} className="space-y-0.5">
                   <div className="font-bold text-teal-300 flex items-center gap-1.5">

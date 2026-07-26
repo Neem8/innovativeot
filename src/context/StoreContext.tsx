@@ -36,10 +36,10 @@ interface StoreContextType {
 
 const StoreContext = createContext<StoreContextType | undefined>(undefined);
 
-const STORAGE_KEY_CASES = 'innovativeot_cases_v1';
-const STORAGE_KEY_THERAPISTS = 'innovativeot_therapists_v1';
-const STORAGE_KEY_APPOINTMENTS = 'innovativeot_apts_v1';
-const STORAGE_KEY_AUDITS = 'innovativeot_audits_v1';
+const STORAGE_KEY_CASES = 'healthbound_cases_v1';
+const STORAGE_KEY_THERAPISTS = 'healthbound_therapists_v1';
+const STORAGE_KEY_APPOINTMENTS = 'healthbound_apts_v1';
+const STORAGE_KEY_AUDITS = 'healthbound_audits_v1';
 
 export const StoreProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [cases, setCases] = useState<ClientCase[]>(INITIAL_CASES);

@@ -1,16 +1,18 @@
 export type UserRole = 'admin' | 'clinic_manager' | 'therapist' | 'referrer' | 'client';
 
 export type ServiceLineId = 
-  | 'pediatric' 
-  | 'mva_rehab' 
-  | 'workplace_ergo' 
-  | 'return_to_work' 
-  | 'driver_rehab' 
-  | 'home_mods' 
-  | 'chronic_pain' 
-  | 'mental_health' 
-  | 'catastrophic_injury' 
-  | 'med_legal';
+  | 'physiotherapy'
+  | 'occupational_therapy'
+  | 'chiropractor'
+  | 'massage_therapy'
+  | 'active_exercise'
+  | 'acupuncture'
+  | 'cupping'
+  | 'chiropody'
+  | 'msk_injection'
+  | 'naturopathic'
+  | 'assistive_devices'
+  | 'psychological_counselling';
 
 export type PayerTypeId = 
   | 'wsib' 
@@ -19,7 +21,8 @@ export type PayerTypeId =
   | 'extended_health' 
   | 'odsp' 
   | 'private_pay' 
-  | 'public_contract';
+  | 'public_contract'
+  | 'adp';
 
 export type PipelineStage = 
   | 'new' 
@@ -30,10 +33,12 @@ export type PipelineStage =
   | 'discharged';
 
 export type LocationId = 
-  | 'st_catharines' 
-  | 'grimsby' 
-  | 'oakville_otmh' 
-  | 'kitchener_benton' 
+  | 'pape_east_york'
+  | 'toronto_bloor_west'
+  | 'hamilton'
+  | 'etobicoke'
+  | 'markham'
+  | 'barrie'
   | 'community_virtual';
 
 export type OntarioRegion = 

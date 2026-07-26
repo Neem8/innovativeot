@@ -45,12 +45,12 @@ export const Header: React.FC = () => {
             </span>
             <span className="hidden md:inline text-slate-400">|</span>
             <a 
-              href="tel:2892144467" 
+              href="tel:18665233615" 
               className="flex items-center gap-1.5 hover:text-teal-300 transition-colors font-semibold"
-              aria-label="Call InnovativeOT at 289-214-4467"
+              aria-label="Call Health Bound at 1-866-523-3615"
             >
               <Phone className="w-3.5 h-3.5 text-teal-400" />
-              <span>289-214-4467</span>
+              <span>1-866-523-3615</span>
             </a>
           </div>
 
@@ -90,15 +90,15 @@ export const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Brand Logo */}
         <Link href="/" className="group flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-[#0F3854] to-[#1E6B9B] flex items-center justify-center text-white font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
-            iOT
+          <div className="w-10 h-10 rounded-xl bg-linear-to-br from-[#0F3854] to-[#0D9488] flex items-center justify-center text-white font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+            HB
           </div>
           <div>
             <div className="flex items-center gap-1">
-              <span className="font-extrabold tracking-tight text-xl text-[#0F3854]">INNOVATIVE</span>
-              <span className="font-light text-xl text-teal-600">OT</span>
+              <span className="font-extrabold tracking-tight text-xl text-[#0F3854]">HEALTH</span>
+              <span className="font-light text-xl text-teal-600">BOUND</span>
             </div>
-            <p className="text-[11px] text-slate-500 font-medium tracking-wide">Occupational Therapy Solutions</p>
+            <p className="text-[11px] text-slate-500 font-medium tracking-wide">Health Network</p>
           </div>
         </Link>
 

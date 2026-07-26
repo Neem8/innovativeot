@@ -15,27 +15,26 @@ export const Footer: React.FC = () => {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-9 h-9 rounded-xl bg-teal-500 text-[#0B2538] font-extrabold flex items-center justify-center text-lg">
-                iOT
+                HB
               </div>
               <div className="flex items-center gap-1 text-xl font-bold text-white">
-                <span>INNOVATIVE</span>
-                <span className="text-teal-400 font-light">OT</span>
+                <span>HEALTH</span>
+                <span className="text-teal-400 font-light">BOUND</span>
               </div>
             </div>
             <p className="text-sm text-slate-400 leading-relaxed max-w-md">
-              Ontario-based occupational therapy practice operating since 2015. Delivering evidence-based clinical, hospital-integrated, and community/virtual OT care across Ontario.
+              Ontario-wide multidisciplinary health network and CARF-accredited clinical resource center. Delivering client-centered, evidence-based care across over 45 communities.
             </p>
             
             <div className="pt-2">
               <span className="text-xs font-semibold uppercase tracking-wider text-teal-400 block mb-2">Our Core Values</span>
               <div className="flex flex-wrap gap-2">
                 {[
-                  'Compassionate Care',
-                  'Interdisciplinary Excellence',
-                  'Healthcare Partner Support',
-                  'Continuity of Care',
-                  'Prevention & Education',
-                  'Community Impact'
+                  'Client-centered care',
+                  'Evidence-based practice',
+                  'Teamwork and collaboration',
+                  'Diversity and inclusion',
+                  'Quality & continuous improvement'
                 ].map((val, idx) => (
                   <span key={idx} className="text-xs bg-slate-800/90 text-slate-300 px-2.5 py-1 rounded-md flex items-center gap-1">
                     <CheckCircle2 className="w-3 h-3 text-teal-400" /> {val}
@@ -68,13 +67,12 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <h3 className="text-sm font-bold uppercase tracking-wider text-white">Service Lines</h3>
             <ul className="space-y-2 text-xs text-slate-400">
-              <li><Link href="/services#pediatric" className="hover:text-teal-300">Pediatric OT & OAP Autism</Link></li>
-              <li><Link href="/services#mva" className="hover:text-teal-300">MVA & Catastrophic Injury</Link></li>
-              <li><Link href="/services#ergo" className="hover:text-teal-300">Workplace Ergonomics & Job Demands</Link></li>
-              <li><Link href="/services#rtw" className="hover:text-teal-300">WSIB & Vocational RTW</Link></li>
-              <li><Link href="/services#driver" className="hover:text-teal-300">Driver Rehab & Assessment</Link></li>
-              <li><Link href="/services#geriatric" className="hover:text-teal-300">Home Safety & Fall Prevention</Link></li>
-              <li><Link href="/services#mental-health" className="hover:text-teal-300">Community Mental Health & Psychotherapy</Link></li>
+              <li><Link href="/services#physiotherapy" className="hover:text-teal-300">Physiotherapy</Link></li>
+              <li><Link href="/services#occupational_therapy" className="hover:text-teal-300">Occupational Therapy</Link></li>
+              <li><Link href="/services#chiropractor" className="hover:text-teal-300">Chiropractic Care</Link></li>
+              <li><Link href="/services#massage_therapy" className="hover:text-teal-300">Massage Therapy (RMT)</Link></li>
+              <li><Link href="/services#assistive_devices" className="hover:text-teal-300">Assistive Devices (ADP)</Link></li>
+              <li><Link href="/services#psychological_counselling" className="hover:text-teal-300">Psychological Counselling</Link></li>
             </ul>
           </div>
 
@@ -82,13 +80,17 @@ export const Footer: React.FC = () => {
           <div className="space-y-3">
             <h3 className="text-sm font-bold uppercase tracking-wider text-white">Contact & Portals</h3>
             <div className="space-y-2.5 text-xs text-slate-300">
-              <a href="tel:2892144467" className="flex items-center gap-2 hover:text-teal-300">
+              <a href="tel:18665233615" className="flex items-center gap-2 hover:text-teal-300">
                 <Phone className="w-4 h-4 text-teal-400" />
-                <span className="font-bold text-sm text-white">289-214-4467</span>
+                <span className="font-bold text-sm text-white">1-866-523-3615</span>
               </a>
               <div className="flex items-center gap-2">
+                <Phone className="w-4 h-4 text-teal-400" />
+                <span>Direct: 416-548-7872</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-teal-400" />
-                <span>intake@innovativeot.ca</span>
+                <span>info@healthbound.ca</span>
               </div>
               <div className="pt-2 flex flex-col gap-2">
                 <Link 
@@ -111,10 +113,10 @@ export const Footer: React.FC = () => {
 
         {/* Bottom Legal & AODA */}
         <div className="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} InnovativeOT Solutions Inc. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Health Bound Health Network. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1 text-slate-400">
-              <ShieldCheck className="w-3.5 h-3.5 text-teal-400" /> PHIPA & PIPEDA Compliant
+              <ShieldCheck className="w-3.5 h-3.5 text-teal-400" /> CARF Accredited & PHIPA Compliant
             </span>
             <span className="text-slate-400">AODA Accessibility Standard</span>
             <Link href="/contact" className="hover:text-slate-300">Privacy Policy</Link>

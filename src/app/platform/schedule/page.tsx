@@ -18,7 +18,7 @@ export default function SchedulePage() {
   const [date, setDate] = useState('2026-07-25');
   const [startTime, setStartTime] = useState('10:00');
   const [endTime, setEndTime] = useState('11:00');
-  const [locationId, setLocationId] = useState<LocationId>('st_catharines');
+  const [locationId, setLocationId] = useState<LocationId>('pape_east_york');
   const [visitType, setVisitType] = useState<'clinic' | 'community_home' | 'virtual'>('clinic');
   const [notes, setNotes] = useState('');
 
@@ -44,7 +44,7 @@ export default function SchedulePage() {
       endTime,
       locationId,
       visitType,
-      virtualMeetingUrl: visitType === 'virtual' ? `https://innovativeot.ca/telehealth/room-${Math.floor(10000 + Math.random() * 90000)}` : undefined,
+      virtualMeetingUrl: visitType === 'virtual' ? `https://healthbound.ca/telehealth/room-${Math.floor(10000 + Math.random() * 90000)}` : undefined,
       serviceLine: client.serviceLine,
       status: 'scheduled',
       notes

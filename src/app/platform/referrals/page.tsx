@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useStore } from '@/context/StoreContext';
 import { PipelineStage, ClientCase, Therapist } from '@/lib/types';
+import { SERVICE_LINES } from '@/lib/mockData';
 import { 
   Kanban, 
   Search, 
@@ -126,11 +127,9 @@ export default function ReferralsKanbanPage() {
             className="p-2 rounded-xl border border-slate-300 text-xs bg-slate-50 font-medium outline-none"
           >
             <option value="all">All Service Lines</option>
-            <option value="mva_rehab">MVA Auto Rehab</option>
-            <option value="pediatric">Pediatric OT</option>
-            <option value="workplace_ergo">Workplace Ergo</option>
-            <option value="home_mods">Home Mods</option>
-            <option value="mental_health">Mental Health</option>
+            {SERVICE_LINES.map(s => (
+              <option key={s.id} value={s.id}>{s.name}</option>
+            ))}
           </select>
         </div>
       </div>

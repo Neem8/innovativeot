@@ -34,7 +34,7 @@ export default function ContactPage() {
             Intake & Practice Contacts
           </span>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-white">
-            Contact InnovativeOT
+            Contact Health Bound
           </h1>
           <p className="text-slate-300 text-sm">
             We are here to answer questions from clients, families, physicians, lawyers, and insurers.
@@ -61,11 +61,22 @@ export default function ContactPage() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">Phone</span>
-                    <a href="tel:2892144467" className="font-extrabold text-lg text-[#0F3854] hover:underline">
-                      289-214-4467
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">Toll-Free Intake</span>
+                    <a href="tel:18665233615" className="font-extrabold text-lg text-[#0F3854] hover:underline">
+                      1-866-523-3615
                     </a>
-                    <p className="text-xs text-slate-500">Toll-Free & Direct Intake Line</p>
+                    <p className="text-xs text-slate-500">Province-Wide Support</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center shrink-0">
+                    <Phone className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">Local Line & Fax</span>
+                    <p className="font-bold text-slate-900">Tel: 416-548-7872</p>
+                    <p className="text-xs text-slate-500">Fax: 416-850-9609</p>
                   </div>
                 </div>
 
@@ -74,8 +85,8 @@ export default function ContactPage() {
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">General & Referral Intake Email</span>
-                    <span className="font-semibold text-slate-900">intake@innovativeot.ca</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">Intake & General Email</span>
+                    <span className="font-semibold text-slate-900">info@healthbound.ca</span>
                   </div>
                 </div>
 
@@ -85,8 +96,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">Hours of Operation</span>
-                    <p className="font-medium">Monday - Friday: 8:00 AM - 5:00 PM EST</p>
-                    <p className="text-xs text-slate-500">Weekend Tele-OT & Emergency Discharge on-call</p>
+                    <p className="font-medium">Monday - Friday: 9:00 AM - 6:00 PM EST</p>
+                    <p className="text-xs text-slate-500">Weekend clinical sessions by appointment</p>
                   </div>
                 </div>
               </div>

@@ -6,10 +6,12 @@ import { LocationInfo } from '@/lib/types';
 import { MapPin, Building2, Phone, ExternalLink, Navigation, Compass } from 'lucide-react';
 
 const CLINIC_COORDINATES: Record<string, { lat: number; lng: number }> = {
-  st_catharines: { lat: 43.1558, lng: -79.2828 },
-  grimsby: { lat: 43.1936, lng: -79.5573 },
-  oakville_otmh: { lat: 43.4357, lng: -79.7525 },
-  kitchener_benton: { lat: 43.4475, lng: -80.4870 }
+  pape_east_york: { lat: 43.6896, lng: -79.3468 },
+  toronto_bloor_west: { lat: 43.6444, lng: -79.5222 },
+  hamilton: { lat: 43.2088, lng: -79.9061 },
+  etobicoke: { lat: 43.6111, lng: -79.5555 },
+  markham: { lat: 43.8561, lng: -79.3370 },
+  barrie: { lat: 44.3894, lng: -79.6903 }
 };
 
 export const RealLeafletMap: React.FC = () => {
@@ -35,12 +37,12 @@ export const RealLeafletMap: React.FC = () => {
       });
 
       if (!leafletMapRef.current && mapContainerRef.current) {
-        // Center on Niagara/GTA region
-        const map = L.map(mapContainerRef.current).setView([43.28, -79.70], 9);
+        // Center on Southern Ontario / Greater Golden Horseshoe / Barrie
+        const map = L.map(mapContainerRef.current).setView([43.8, -79.5], 8);
 
         // OpenStreetMap real map tile layer
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | InnovativeOT Ontario',
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors | Health Bound Health Network',
           maxZoom: 18,
         }).addTo(map);
 
@@ -114,7 +116,7 @@ export const RealLeafletMap: React.FC = () => {
             <Compass className="w-6 h-6 text-teal-600" />
             <span>Interactive Ontario Clinic Map</span>
           </h2>
-          <p className="text-xs text-slate-500">Live street map showing St. Catharines, Grimsby, Oakville, and Kitchener clinic locations.</p>
+          <p className="text-xs text-slate-500">Live street map showing East York, Toronto, Hamilton, Etobicoke, Markham, and Barrie clinic locations.</p>
         </div>
 
         {/* Location Selector Buttons */}

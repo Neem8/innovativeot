@@ -144,8 +144,8 @@ export default function ClientPortalPage() {
             <div className="bg-slate-900 text-white p-6 rounded-2xl space-y-3 text-xs">
               <h3 className="font-bold text-sm text-white">Need to Reschedule?</h3>
               <p className="text-slate-300">Call your clinic coordinator at least 24 hours prior to your session.</p>
-              <a href="tel:2892144467" className="font-bold text-teal-300 hover:underline block pt-1">
-                📞 Call 289-214-4467
+              <a href="tel:18665233615" className="font-bold text-teal-300 hover:underline block pt-1">
+                📞 Call 1-866-523-3615
               </a>
             </div>
           </div>

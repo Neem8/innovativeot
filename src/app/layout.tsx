@@ -4,12 +4,12 @@ import { AuthProvider } from "@/context/AuthContext";
 import { StoreProvider } from "@/context/StoreContext";
 
 export const metadata: Metadata = {
-  title: "InnovativeOT | Occupational Therapy Services Ontario",
-  description: "Ontario-based multi-location occupational therapy provider. Specializing in Pediatric OT, MVA Rehab, Workplace Ergonomics, Return-to-Work, Geriatric Fall Prevention, and Community Mental Health across GTA, Niagara, Halton, and Waterloo.",
-  keywords: "occupational therapy ontario, pediatric OT st catharines, MVA rehab oakville, WSIB ergonomic assessment kitchener, driver rehab grimsby, brain injury rehab GTA, OAP autism therapy, PHIPA compliant OT platform",
+  title: "Health Bound Health Network | Multidisciplinary Rehabilitation Services Ontario",
+  description: "CARF-accredited multidisciplinary rehabilitation network across Ontario. Specializing in Physiotherapy, Occupational Therapy, Chiropractic Care, Massage, and Psychological Counselling across 45+ communities.",
+  keywords: "physiotherapy ontario, occupational therapy toronto, CARF accredited clinic, MVA rehabilitation, WSIB return to work, psychological counselling, chiropody Markham, massage therapy East York, health network Ontario",
   openGraph: {
-    title: "InnovativeOT | Where Your Journey Begins",
-    description: "Multi-location & virtual occupational therapy operating platform across Ontario.",
+    title: "Health Bound Health Network | Rebuilding Life and Health",
+    description: "CARF-accredited multidisciplinary clinic and community outreach network across Ontario.",
     type: "website",
     locale: "en_CA",
   }

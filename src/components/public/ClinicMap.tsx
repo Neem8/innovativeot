@@ -9,18 +9,20 @@ interface ClinicMapProps {
   initialSelectedId?: string;
 }
 
-export const ClinicMap: React.FC<ClinicMapProps> = ({ initialSelectedId = 'st_catharines' }) => {
+export const ClinicMap: React.FC<ClinicMapProps> = ({ initialSelectedId = 'pape_east_york' }) => {
   const physicalClinics = CLINIC_LOCATIONS.filter(l => l.id !== 'community_virtual');
   const [selectedLoc, setSelectedLoc] = useState<LocationInfo>(
     physicalClinics.find(l => l.id === initialSelectedId) || physicalClinics[0]
   );
 
-  // Map pin relative coordinates (%) for Southern Ontario / Niagara / GTA map canvas
+  // Map pin relative coordinates (%) for Southern Ontario / GTA map canvas
   const pinCoordinates: Record<string, { top: string; left: string; labelPosition: string }> = {
-    kitchener_benton: { top: '32%', left: '22%', labelPosition: 'bottom' },
-    oakville_otmh: { top: '28%', left: '54%', labelPosition: 'top' },
-    grimsby: { top: '56%', left: '60%', labelPosition: 'bottom' },
-    st_catharines: { top: '68%', left: '76%', labelPosition: 'top' }
+    barrie: { top: '15%', left: '42%', labelPosition: 'top' },
+    markham: { top: '26%', left: '62%', labelPosition: 'top' },
+    pape_east_york: { top: '34%', left: '54%', labelPosition: 'bottom' },
+    toronto_bloor_west: { top: '36%', left: '48%', labelPosition: 'top' },
+    etobicoke: { top: '38%', left: '42%', labelPosition: 'bottom' },
+    hamilton: { top: '58%', left: '30%', labelPosition: 'bottom' }
   };
 
   return (
@@ -34,7 +36,7 @@ export const ClinicMap: React.FC<ClinicMapProps> = ({ initialSelectedId = 'st_ca
           </span>
           <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1 flex items-center gap-2">
             <Compass className="w-6 h-6 text-teal-600" />
-            <span>InnovativeOT Physical Clinic Locations</span>
+            <span>Health Bound Physical Clinic Locations</span>
           </h2>
           <p className="text-xs text-slate-500">Select a clinic pin to view hospital co-location details, address, and directions.</p>
         </div>
